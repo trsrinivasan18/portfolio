@@ -1,0 +1,287 @@
+/* CSS Document */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form {
+  padding: 0;
+  margin: 0; }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  counter-reset: my-sec-counter; }
+input {
+  outline: none; }
+a {
+  color: inherit; }
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
+  resize: none; }
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+select::-ms-expand {
+  display: none; }
+input.button {
+  border: none;
+  outline: none; }
+input::-webkit-input-placeholder {
+  opacity: 1; }
+input::-moz-placeholder {
+  opacity: 1; }
+input:-ms-input-placeholder {
+  opacity: 1; }
+input:-moz-placeholder {
+  opacity: 1; }
+input[type="checkbox"] {
+  border: none;
+  outline: none; }
+img {
+  outline: none;
+  border: none;
+  max-width: 100%;
+  user-select: none; }
+li {
+  list-style: none; }
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: none !important;
+  user-select: none; }
+a:focus {
+  outline: none;
+  text-decoration: none; }
+* {
+  box-sizing: border-box; }
+button,
+a,
+input[type="submit"] {
+  -o-transition: all 0.5s ease-out, all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-out, all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-out, all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-out, all 0.5s ease-in;
+  transition: all 0.5s ease-out, all 0.5s ease-in; }
+:not(output):-moz-ui-invalid {
+  box-shadow: inset; }
+a:after,
+a:before {
+  transition: 0.5s all ease-out, 0.5s all ease-in;
+  -ms-transition: 0.5s all ease-out, 0.5s all ease-in;
+  -webkit-transition: 0.5s all ease-out, 0.5s all ease-in;
+  -o-transition: 0.5s all ease-out, 0.5s all ease-in; }
+button:after,
+button:before {
+  transition: 0.5s all ease-out, 0.5s all ease-in;
+  -ms-transition: 0.5s all ease-out, 0.5s all ease-in;
+  -webkit-transition: 0.5s all ease-out, 0.5s all ease-in;
+  -o-transition: 0.5s all ease-out, 0.5s all ease-in; }
+*:focus {
+  outline: none !important; }
+.clearfix {
+  clear: both;
+  display: block; }
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: block; }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block; }
+button {
+  border: unset;
+  background-color: unset;
+  outline: unset; }
+a,
+span {
+  display: inline-block; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+.container {
+  max-width: 1350px !important;
+  width: 100%;
+  margin: auto;
+  padding: 0; }
+:root{
+    --bg-color:#11071F;
+    --text-color:#fff;
+}
+body{
+    background-color: var(--bg-color);
+}
+@font-face {
+    font-family: "PlusJakartaSans-Bold";
+    src: url("../fonts/PlusJakartaSans-Bold.eot");
+    src: url("../fonts/PlusJakartaSans-Bold.eot?iefix") format("embedded-opentype"), url("../fonts/PlusJakartaSans-Bold.woff") format("woff"), url("../fonts/PlusJakartaSans-Bold.ttf") format("truetype"), url("../fonts/PlusJakartaSans-Bold.svgPlusJakartaSans-Bold") format("svg");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "PlusJakartaSans-Regular";
+    src: url("../fonts/PlusJakartaSans-Regular.eot");
+    src: url("../fonts/PlusJakartaSans-Regular.eot?iefix") format("embedded-opentype"), url("../fonts/PlusJakartaSans-Regular.woff") format("woff"), url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype"), url("../fonts/PlusJakartaSans-Regular.svgPlusJakartaSans-Regular") format("svg");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "PlusJakartaSans-MediumItalic";
+    src: url("../fonts/PlusJakartaSans-MediumItalic.eot");
+    src: url("../fonts/PlusJakartaSans-MediumItalic.eot?iefix") format("embedded-opentype"), url("../fonts/PlusJakartaSans-MediumItalic.woff") format("woff"), url("../fonts/PlusJakartaSans-MediumItalic.ttf") format("truetype"), url("../fonts/PlusJakartaSans-MediumItalic.svgPlusJakartaSans-MediumItalic") format("svg");
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+*{
+    color: #fff !important;
+    font-family: "PlusJakartaSans-Regular";
+}
+.header_block{
+   background-color: #1A0B2E;
+   box-shadow: 0 0 10px 0 #58496a7d;
+}
+
+.header_block .nav-link:hover,.header_block .nav-link.active{
+    color: #7127BA !important;
+}
+
+.banner{
+    max-width: 700px;
+}
+.banner-image{
+    background: url(../images/Gradient.png) no-repeat center / cover;
+    padding: 80px;
+}
+.banner-content{
+    margin-left: -27px;
+} 
+
+.banner-content span{
+    position: absolute;
+    top: -83px;
+    left: 0;
+    letter-spacing: 1px;
+    font-family: "PlusJakartaSans-MediumItalic";
+}
+.banner-content span b{
+    color: #7127BA !important;
+}
+.banner-content span::before {
+    content: '';
+    clear: both;
+    display: block;
+    height: 51px;
+    width: 76px;
+    background: url(../images/Vector.png) no-repeat center center;
+    position: absolute;
+    left: -86px;
+    top: 12px;
+    z-index: 4;
+}
+.header_block button{
+    box-shadow: unset !important;
+}
+
+p{
+    line-height: 30px;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 34px;
+    line-height: 43px;
+}
+
+/* media screen  */
+
+@media screen and (max-width:1400px) {
+    .container{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:767px){
+    .nav-link{
+        color: #1A0B2E !important;
+    }
+}
+@media screen and (max-width:1100px) {
+    .banner-image {
+        padding: 65px;
+    }
+    .banner-content {
+        margin-left: 0;
+    }
+    .banner-content span {
+        top: -64px;
+    }
+    .banner-content span::before {
+        height: 40px;
+        width: 82px;
+        left: -77px;
+        top: 11px;
+        background-size: 64px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .banner-image img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner-image img {
+        width: 120px;
+    }
+    .banner-image {
+        padding: 47px 60px;
+    }
+    .banner-content span {
+        position: unset;
+    }
+    .banner-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .banner-content span::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .banner-image {
+        padding: 31px 45px;
+    }
+    .banner-image img {
+        width: 106px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 29px;
+    }
+}
