@@ -93,7 +93,9 @@ button:before {
   -webkit-transition: 0.5s all ease-out, 0.5s all ease-in;
   -o-transition: 0.5s all ease-out, 0.5s all ease-in; }
 *:focus {
-  outline: none !important; }
+  outline: none !important; 
+  font-family: "PlusJakartaSans-Regular";;
+}
 .clearfix {
   clear: both;
   display: block; }
@@ -164,7 +166,7 @@ body{
     color: #7127BA !important;
 }
 
-.banner{
+.banner .banner-block{
     max-width: 700px;
 }
 .banner-image{
@@ -174,6 +176,10 @@ body{
 .banner-content{
     margin-left: -27px;
 } 
+
+.banner .baner-inner{
+   max-width: 800px;
+}
 
 .banner-content span{
     position: absolute;
@@ -209,6 +215,99 @@ h1,h2,h3,h4,h5,h6{
     font-size: 34px;
     line-height: 43px;
 }
+body{
+    overflow-x: hidden;
+}
+.skills-block {
+    border-top: 1px solid #cccccc1f;
+    border-bottom: 1px solid #cccccc1f;
+}
+
+.skills-block .skills-fle .skills-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+.skills-block .skills-fle .skills-item .skills-img {
+    height: 60px;
+    width: 60px;
+    background-color: #80808066;
+    animation: boxShadowPulse 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.skills-block .skills-fle .skills-item img{
+    width: 32px;
+    object-fit: contain;
+    height: 32px;
+}
+.skills-block .skills-fle{
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.skills-block .skills-fle .skills-item .pop-over {
+    position: absolute;
+    bottom: 114%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    padding: 11px 15px;
+    background: linear-gradient(135deg, #572998 0%, #251043 50%, #30115cbf 100%);
+    color: #fff;
+    border-radius: 7px;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    animation: none;
+    width: 300px;
+    background-size: cover;
+    line-height: 21px;
+    border: unset;
+    z-index: 4;
+}
+
+  .skills-block .skills-fle .skills-item:hover .pop-over {
+    visibility: visible;
+      animation: popoverAnimation 0.5s ease forwards;
+  }
+  .skills-block .skills-fle .skills-item .pop-over::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: #38126D transparent transparent transparent;
+  }
+  @keyframes popoverAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.8) translateY(10px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(-50%) scale(1.05) translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1) translateY(0);
+    }
+  }
+
+@keyframes boxShadowPulse {
+    0% {
+      box-shadow: 0 2px 6px rgba(141, 118, 118, 0.1);
+    }
+    50% {
+      box-shadow: 0 3px 10px rgba(218, 203, 203, 0.2);
+    }
+    100% {
+      box-shadow: 0 4px 12px rgba(160, 135, 135, 0.1);
+    }
+  }
+
+
 
 
 /* media screen  */
